@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+  scroll-behavior: smooth;
+}
+
+/* reuseable class */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-8px {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-4 {
+  gap: 4rem;
+}
+
+.section-container {
+  padding: 4rem;
+  width: 100%;
+  min-height: 50vh;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.big-separator {
+  height: 16px;
+  width: 16px;
+  background-color: #db4444;
+}
+
+.red {
+  color: #db4444;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cta-btn {
+  padding: 1rem 4rem;
+  background-color: #db4444;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  box-shadow: 2px 0px 10px gray;
+}
+/* reuseable class */
+
+/* navbar class */
+.navbar {
+  width: 100vw;
+  padding: 1.5rem 4rem;
+  gap: 4rem;
+  display: flex;
+  border-bottom: 0.5px solid black;
+  align-items: center;
+}
+
+.navbar-menu-container {
+  width: 100%;
+  gap: 4rem;
+}
+
+.navbar-nav-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-nav-item {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  color: black;
+}
+
+.navbar-action-container {
+  gap: 2rem;
+  justify-content: end;
+  width: 100%;
+}
+
+.navbar-search-box {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #f5f5f5;
+  display: none;
+}
+
+.navbar-menu-container > .logo {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+/* navbar class */
+
+/* footer class */
+.footer {
+  background-color: black;
+  padding: 4rem;
+  width: 100vw;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.tagline {
+  font-weight: 100;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-link {
+  font-size: 14px;
+  font-weight: 300;
+}
+/* footer class */

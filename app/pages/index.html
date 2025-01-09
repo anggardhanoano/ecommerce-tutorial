@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons&family=Material+Icons+Outlined&family=Material+Icons+Round&family=Material+Icons+Sharp&family=Material+Icons+Two+Tone" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/home.css" />
+    <script src="../scripts/index.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <header class="navbar">
+        <section class="flex-row items-center navbar-menu-container">
+            <a class="logo" href="./index.html">
+                <span>Gradient Shop.</span>
+            </a>
+            <nav class="navbar-nav-container">
+                <a class="navbar-nav-item" href="./index.html">Home</a>
+                <a class="navbar-nav-item" href="#contact">Contact</a>
+                <a class="navbar-nav-item" href="./about.html">About</a>
+            </nav>
+        </section>
+        <section class="navbar-action-container flex-row items-center">
+            <input placeholder="Cari barang yang kamu perlukan" class="navbar-search-box" />
+            <nav class="navbar-nav-container">
+                <a class="navbar-nav-item" href="./keranjang.html">
+                    <span class="material-icons-outlined">
+                        shopping_cart
+                    </span>
+                </a>
+            </nav>
+        </section>
+    </header>
+    <!-- navbar -->
+     <div class="section-container flex-col gap-4">
+         <!-- category section -->
+         <section class="flex-col gap-2">
+            <div class="flex-row gap-1">
+                <div class="big-separator"></div>
+                <h2 class="subtitle" id="category">Kategori produk</h2>
+            </div>
+              <section class="category-container flex-row items-center justify-center">
+                  <a class="category-item" href="./kategori/tas.html">
+                      <span class="material-icons-outlined">
+                          local_mall
+                          </span>
+                      <span>Tas</span>
+                  </a>
+                  <a class="category-item" href="./kategori/kecantikan.html">
+                      <span class="material-icons-outlined">
+                          filter_vintage
+                          </span>
+                      <span>Kecantikan</span>
+                  </a>
+                  <a class="category-item" href="./kategori/sepatu.html">
+                      <span class="material-icons-outlined">
+                          ice_skating
+                          </span>
+                      <span>Sepatu</span>
+                  </a>
+                  <a class="category-item" href="./kategori/jam-tangan.html">
+                      <span class="material-icons-outlined">
+                          watch
+                          </span>
+                      <span>Jam Tangan</span>
+                  </a>
+                  <a class="category-item" href="./kategori/hp-dan-tablet.html">
+                      <span class="material-icons-outlined">
+                          smartphone
+                      </span>
+                      <span>HP & Tablet</span>
+                  </a>
+                  <a class="category-item" href="./kategori/komputer.html">
+                      <span class="material-icons-outlined">
+                          computer
+                      </span>
+                      <span>Komputer</span>
+                  </a>
+                  <a class="category-item" href="./kategori/headset.html">
+                      <span class="material-icons-outlined">
+                          headset
+                      </span>
+                      <span>Headset</span>
+                  </a>
+              </section>
+         </section>
+         <!-- category section -->
+         <!-- best selling section -->
+          <section class="flex-col gap-2">
+            <div class="flex-row gap-1">
+                <div class="big-separator"></div>
+                <h2 class="subtitle" id="bestseller">Produk terlaris</h2>
+            </div>
+            <section class="bestseling-container">
+                <div class="bestseling-container-scroll">
+                    <div class="bestselling-item" onclick="onClickBestSellingProduct(this)">
+                        <img src="../../assets/products/computer/laptop-1.jpg" alt="Laptop 1" class="bestseling-img" />
+                        <div class="bestselling-item-content-overlay"></div>
+                        <div class="bestselling-item-content">
+                            <h3>Macbook Pro Plus</h3>
+                            <div class="price-box">
+                                <h4>Rp 12.000.000</h4>
+                            </div>
+                            <div class="flex-row gap-1">
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bestselling-item" onclick="onClickBestSellingProduct(this)">
+                        <img src="../../assets/products/bag/bag-3.jpg" alt="Laptop 1" class="bestseling-img" />
+                        <div class="bestselling-item-content-overlay"></div>
+                        <div class="bestselling-item-content">
+                            <h3>Tas Hermes XL</h3>
+                            <div class="price-box">
+                                <h4>Rp 130.000.000</h4>
+                            </div>
+                            <div class="flex-row gap-1">
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bestselling-item" onclick="onClickBestSellingProduct(this)">
+                        <img src="../../assets/products/shoes/shoes-3.jpg" alt="Laptop 1" class="bestseling-img" />
+                        <div class="bestselling-item-content-overlay"></div>
+                        <div class="bestselling-item-content">
+                            <h3>Nike Run FIT</h3>
+                            <div class="price-box">
+                                <h4>Rp 1.500.000</h4>
+                            </div>
+                            <div class="flex-row gap-1">
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bestselling-item" onclick="onClickBestSellingProduct(this)">
+                        <img src="../../assets/products/watch/watch-2.jpg" alt="Laptop 1" class="bestseling-img" />
+                        <div class="bestselling-item-content-overlay"></div>
+                        <div class="bestselling-item-content">
+                            <h3>Omega Seamaster</h3>
+                            <div class="price-box">
+                                <h4>Rp 120.000.000</h4>
+                            </div>
+                            <div class="flex-row gap-1">
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                                <span class="material-icons-outlined">
+                                    star
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+          </section>
+         <!-- best selling section -->
+          <!-- explore section -->
+          <section class="flex-col gap-2">
+            <div class="flex-row gap-1">
+                <div class="big-separator"></div>
+                <h2 class="subtitle" id="explore">Eksplor produk</h2>
+            </div>
+            <section class="catalog-product-container">
+                <div class="catalog-product-item">
+                    <img src="../../assets/products/cosmetics/skincare-1.jpg" class="catalog-product-img"/>
+                    <h3>Hair Oil 100% Organic</h3>
+                    <h4>Rp 40.000</h4>
+                    <div class="flex-row gap-1">
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined">
+                            star
+                        </span>
+                    </div>
+                    <div class="flex-row gap-8px w-full items-center">
+                        <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                        <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                            shopping_cart
+                        </span>
+                    </div>
+                </div>
+                <div class="catalog-product-item">
+                    <img src="../../assets/products/shoes/shoes-5.jpg" class="catalog-product-img"/>
+                    <h3>Air Jordan Original</h3>
+                    <h4>Rp 1.250.000</h4>
+                    <div class="flex-row gap-1">
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined">
+                            star
+                        </span>
+                        <span class="material-icons-outlined">
+                            star
+                        </span>
+                    </div>
+                    <div class="flex-row gap-8px w-full items-center">
+                        <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                        <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                            shopping_cart
+                        </span>
+                    </div>
+                </div>
+                <div class="catalog-product-item">
+                    <img src="../../assets/products/bag/bag-1.jpg" class="catalog-product-img"/>
+                    <h3>Coach Bag</h3>
+                    <h4>Rp 5.000.000</h4>
+                    <div class="flex-row gap-1">
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined">
+                            star
+                        </span>
+                    </div>
+                    <div class="flex-row gap-8px w-full items-center">
+                        <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                        <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                            shopping_cart
+                        </span>
+                    </div>
+                </div>
+                <div class="catalog-product-item">
+                    <img src="../../assets/products/phones/phone-1.jpg" class="catalog-product-img"/>
+                    <h3>Gradient Phone</h3>
+                    <h4>Rp 11.040.000</h4>
+                    <div class="flex-row gap-1">
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                    </div>
+                    <div class="flex-row gap-8px w-full items-center">
+                        <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                        <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                            shopping_cart
+                        </span>
+                    </div>
+                </div>
+                <div class="catalog-product-item">
+                    <img src="../../assets/products/headset/airpods.jpg" class="catalog-product-img"/>
+                    <h3>Airpods Pro</h3>
+                    <h4>Rp 2.400.000</h4>
+                    <div class="flex-row gap-1">
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                    </div>
+                    <div class="flex-row gap-8px w-full items-center">
+                        <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                        <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                            shopping_cart
+                        </span>
+                    </div>
+                </div>
+                <div class="catalog-product-item">
+                    <img src="../../assets/products/cosmetics/skincare-4.jpg" class="catalog-product-img"/>
+                    <h3>Bamboo Shampoo</h3>
+                    <h4>Rp 300.000</h4>
+                    <div class="flex-row gap-1">
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined">
+                            star
+                        </span>
+                    </div>
+                    <div class="flex-row gap-8px w-full items-center">
+                        <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                        <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                            shopping_cart
+                        </span>
+                    </div>
+                </div>
+                <div class="catalog-product-item">
+                    <img src="../../assets/products/bag/bag-2.jpg" class="catalog-product-img"/>
+                    <h3>Kate Spade White</h3>
+                    <h4>Rp 3.000.000</h4>
+                    <div class="flex-row gap-1">
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                    </div>
+                    <div class="flex-row gap-8px w-full items-center">
+                        <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                        <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                            shopping_cart
+                        </span>
+                    </div>
+                </div>
+                <div class="catalog-product-item">
+                    <img src="../../assets/products/computer/pc-1.jpg" class="catalog-product-img"/>
+                    <h3>IMac 2024</h3>
+                    <h4>Rp 20.000.000</h4>
+                    <div class="flex-row gap-1">
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                        <span class="material-icons-outlined red">
+                            star
+                        </span>
+                    </div>
+                    <div class="flex-row gap-8px w-full items-center">
+                        <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                        <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                            shopping_cart
+                        </span>
+                    </div>
+                </div>
+            </section>
+          </section>
+          <div class="w-full flex-row items-center justify-center">
+            <a class="cta-btn" href="#category">
+                Lihat berdasarkan kategori
+            </a>
+          </div>
+           <!-- explore section -->
+     </div>
+     <footer class="footer flex-col">
+        <div class="flex-col">
+            <span class="logo">Gradient Shop.</span>
+            <span class="tagline">Apapun yang kamu cari, kami ada!</span>
+        </div>
+        <div class="flex-col gap-1">
+            <h5 class="footer-title">Sitemap</h5>
+            <a class="footer-link">Home</a>
+            <a class="footer-link">Contact</a>
+            <a class="footer-link">About</a>
+        </div>
+        <div class="flex-col gap-1">
+            <h5 class="footer-title">Kategori</h5>
+            <a class="footer-link">Tas</a>
+            <a class="footer-link">Kecantikan</a>
+            <a class="footer-link">Sepatu</a>
+            <a class="footer-link">Jam Tangan</a>
+            <a class="footer-link">HP & Tablet</a>
+            <a class="footer-link">Komputer</a>
+            <a class="footer-link">Headset</a>
+        </div>
+     </footer>
+</body>
+</html>

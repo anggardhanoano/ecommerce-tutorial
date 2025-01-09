@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tas di Gradient Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons&family=Material+Icons+Outlined&family=Material+Icons+Round&family=Material+Icons+Sharp&family=Material+Icons+Two+Tone" rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/category.css" />
+    <script src="../../scripts/index.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <header class="navbar">
+        <section class="flex-row items-center navbar-menu-container">
+            <a class="logo" href="../index.html">
+                <span>Gradient Shop.</span>
+            </a>
+            <nav class="navbar-nav-container">
+                <a class="navbar-nav-item" href="../index.html">Home</a>
+                <a class="navbar-nav-item" href="#contact">Contact</a>
+                <a class="navbar-nav-item" href="../about">About</a>
+            </nav>
+        </section>
+        <section class="navbar-action-container flex-row items-center">
+            <input placeholder="Cari barang yang kamu perlukan" class="navbar-search-box" />
+            <nav class="navbar-nav-container">
+                <a class="navbar-nav-item" href="../../keranjang.html">
+                    <span class="material-icons-outlined">
+                        shopping_cart
+                    </span>
+                </a>
+            </nav>
+        </section>
+    </header>
+    <!-- navbar -->
+     <div class="section-container flex-col gap-4">
+        <div class="flex-row gap-1">
+            <div class="big-separator"></div>
+            <h2 class="subtitle" id="explore">Produk HP dan Tablet</h2>
+        </div>
+        <section class="catalog-product-container">
+            <div class="catalog-product-item">
+                <img src="../../../assets/products/phones/phone-1.jpg" class="catalog-product-img"/>
+                <h3>iPhone 14 Pro Max</h3>
+                <h4>Rp 19.999.000</h4>
+                <div class="flex-row gap-1">
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                </div>
+                <div class="flex-row gap-8px w-full items-center">
+                    <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                    <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+            <div class="catalog-product-item">
+                <img src="../../../assets/products/phones/phone-2.jpg" class="catalog-product-img"/>
+                <h3>Samsung Galaxy S23 Ultra</h3>
+                <h4>Rp 18.999.000</h4>
+                <div class="flex-row gap-1">
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                </div>
+                <div class="flex-row gap-8px w-full items-center">
+                    <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                    <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+            <div class="catalog-product-item">
+                <img src="../../../assets/products/phones/phone-3.jpg" class="catalog-product-img"/>
+                <h3>Google Pixel 7 Pro</h3>
+                <h4>Rp 15.999.000</h4>
+                <div class="flex-row gap-1">
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                </div>
+                <div class="flex-row gap-8px w-full items-center">
+                    <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                    <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+            <div class="catalog-product-item">
+                <img src="../../../assets/products/phones/phone-4.jpg" class="catalog-product-img"/>
+                <h3>OnePlus 11</h3>
+                <h4>Rp 12.999.000</h4>
+                <div class="flex-row gap-1">
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                </div>
+                <div class="flex-row gap-8px w-full items-center">
+                    <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                    <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+            <div class="catalog-product-item">
+                <img src="../../../assets/products/phones/phone-5.jpg" class="catalog-product-img"/>
+                <h3>Xiaomi 13 Pro</h3>
+                <h4>Rp 14.999.000</h4>
+                <div class="flex-row gap-1">
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                </div>
+                <div class="flex-row gap-8px w-full items-center">
+                    <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                    <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+            <div class="catalog-product-item">
+                <img src="../../../assets/products/phones/phone-6.jpg" class="catalog-product-img"/>
+                <h3>ASUS ROG Phone 7</h3>
+                <h4>Rp 16.999.000</h4>
+                <div class="flex-row gap-1">
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                </div>
+                <div class="flex-row gap-8px w-full items-center">
+                    <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                    <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+            <div class="catalog-product-item">
+                <img src="../../../assets/products/phones/phone-7.jpg" class="catalog-product-img"/>
+                <h3>Nothing Phone 2</h3>
+                <h4>Rp 11.999.000</h4>
+                <div class="flex-row gap-1">
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                </div>
+                <div class="flex-row gap-8px w-full items-center">
+                    <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                    <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+            <div class="catalog-product-item">
+                <img src="../../../assets/products/phones/phone-8.jpg" class="catalog-product-img"/>
+                <h3>Vivo X90 Pro</h3>
+                <h4>Rp 13.999.000</h4>
+                <div class="flex-row gap-1">
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                </div>
+                <div class="flex-row gap-8px w-full items-center">
+                    <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                    <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+            <div class="catalog-product-item">
+                <img src="../../../assets/products/phones/phone-10.jpg" class="catalog-product-img"/>
+                <h3>Huawei P60 Pro</h3>
+                <h4>Rp 14.499.000</h4>
+                <div class="flex-row gap-1">
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                </div>
+                <div class="flex-row gap-8px w-full items-center">
+                    <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                    <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+            <div class="catalog-product-item">
+                <img src="../../../assets/products/phones/phone-11.jpg" class="catalog-product-img"/>
+                <h3>Sony Xperia 1 V</h3>
+                <h4>Rp 17.999.000</h4>
+                <div class="flex-row gap-1">
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                </div>
+                <div class="flex-row gap-8px w-full items-center">
+                    <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                    <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+            <div class="catalog-product-item">
+                <img src="../../../assets/products/phones/phone-12.jpg" class="catalog-product-img"/>
+                <h3>Realme GT Neo 5</h3>
+                <h4>Rp 9.999.000</h4>
+                <div class="flex-row gap-1">
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                </div>
+                <div class="flex-row gap-8px w-full items-center">
+                    <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                    <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+            <div class="catalog-product-item">
+                <img src="../../../assets/products/phones/phone-13.jpg" class="catalog-product-img"/>
+                <h3>Poco F5 Pro</h3>
+                <h4>Rp 8.999.000</h4>
+                <div class="flex-row gap-1">
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                </div>
+                <div class="flex-row gap-8px w-full items-center">
+                    <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                    <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+            <div class="catalog-product-item">
+                <img src="../../../assets/products/phones/tablet-1.jpg" class="catalog-product-img"/>
+                <h3>iPad Pro M2</h3>
+                <h4>Rp 15.999.000</h4>
+                <div class="flex-row gap-1">
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                </div>
+                <div class="flex-row gap-8px w-full items-center">
+                    <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                    <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+            <div class="catalog-product-item">
+                <img src="../../../assets/products/phones/tablet-2.jpg" class="catalog-product-img"/>
+                <h3>Samsung Galaxy Tab S9 Ultra</h3>
+                <h4>Rp 13.999.000</h4>
+                <div class="flex-row gap-1">
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                    <span class="material-icons-outlined red">
+                        star
+                    </span>
+                </div>
+                <div class="flex-row gap-8px w-full items-center">
+                    <button class="product-btn w-full" onclick="onClickDetailProduct(this)">Lihat produk</button>
+                    <span class="material-icons-outlined cursor-pointer add-to-cart" onclick="addToCart(this)">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+        </section>
+     </div>
+     <footer class="footer flex-col">
+        <div class="flex-col">
+            <span class="logo">Gradient Shop.</span>
+            <span class="tagline">Apapun yang kamu cari, kami ada!</span>
+        </div>
+        <div class="flex-col gap-1">
+            <h5 class="footer-title">Sitemap</h5>
+            <a class="footer-link">Home</a>
+            <a class="footer-link">Contact</a>
+            <a class="footer-link">About</a>
+        </div>
+        <div class="flex-col gap-1">
+            <h5 class="footer-title">Kategori</h5>
+            <a class="footer-link">Tas</a>
+            <a class="footer-link">Kecantikan</a>
+            <a class="footer-link">Sepatu</a>
+            <a class="footer-link">Jam Tangan</a>
+            <a class="footer-link">HP & Tablet</a>
+            <a class="footer-link">Komputer</a>
+            <a class="footer-link">Headset</a>
+        </div>
+     </footer>
+</body>
+</html>
