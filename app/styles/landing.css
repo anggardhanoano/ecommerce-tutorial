@@ -18,6 +18,8 @@
   font-weight: 300;
   font-size: 12px;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 .product-category-item:hover {
@@ -39,6 +41,7 @@
   min-width: 400px;
   background-color: gray;
   position: relative;
+  cursor: pointer;
 }
 
 .carousel-item-img {

@@ -15,9 +15,9 @@
             <div class="navbar-left-menu">
                 <h1 class="logo">Gradient Shop</h1>
                 <nav class="navbar-menu-container">
-                    <a href="https://gradient.academy">Home</a>
-                    <a>Contact</a>
-                    <a>About</a>
+                    <a href="./index.html">Home</a>
+                    <a href="./contact.html">Contact</a>
+                    <a href="./about.html">About</a>
                 </nav>
             </div>
             <a class="navbar-right-menu" href="./keranjang.html">
@@ -29,54 +29,54 @@
         <!-- navbar -->
 
         <!-- category product -->
-        <section class="section-container">
+        <section id="category-section" class="section-container">
             <div class="section-title">
                 <div class="red-box"></div>
                 <h2 class="section-title-content">Kategori produk</h2>
             </div>
             <div class="product-category-container">
-                <div class="product-category-item">
+                <a class="product-category-item" href="./kategori/tas.html">
                     <span class="material-icons-outlined">
-                        shopping_bag
-                    </span>
+                        local_mall
+                        </span>
                     <span>Tas</span>
-                </div>
-                <div class="product-category-item">
+                </a>
+                <a class="product-category-item" href="./kategori/kecantikan.html">
                     <span class="material-icons-outlined">
                         filter_vintage
                         </span>
                     <span>Kecantikan</span>
-                </div>
-                <div class="product-category-item">
+                </a>
+                <a class="product-category-item" href="./kategori/sepatu.html">
                     <span class="material-icons-outlined">
                         ice_skating
                         </span>
                     <span>Sepatu</span>
-                </div>
-                <div class="product-category-item">
+                </a>
+                <a class="product-category-item" href="./kategori/jam-tangan.html">
                     <span class="material-icons-outlined">
                         watch
                         </span>
                     <span>Jam Tangan</span>
-                </div>
-                <div class="product-category-item">
+                </a>
+                <a class="product-category-item" href="./kategori/hp-dan-tablet.html">
                     <span class="material-icons-outlined">
                         smartphone
                     </span>
                     <span>HP & Tablet</span>
-                </div>
-                <div class="product-category-item">
+                </a>
+                <a class="product-category-item" href="./kategori/komputer.html">
                     <span class="material-icons-outlined">
                         computer
                     </span>
                     <span>Komputer</span>
-                </div>
-                <div class="product-category-item">
+                </a>
+                <a class="product-category-item" href="./kategori/headset.html">
                     <span class="material-icons-outlined">
                         headset
                     </span>
                     <span>Headset</span>
-                </div>
+                </a>
             </div>
         </section> 
         <!-- category product -->
@@ -86,7 +86,7 @@
                 <h2 class="section-title-content">Produk Terlaris</h2>
             </div>
             <div class="carousel-container">
-                <div class="carousel-item">
+                <div class="carousel-item" onclick="onClickBestSellingProduct(this)">
                     <img class="carousel-item-img" src="../../assets/products/computer/laptop-1.jpg" alt="Macbook Pro Plus" />
                     <div class="carousel-item-overlay"></div>
                     <div class="carousel-item-content">
@@ -113,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" onclick="onClickBestSellingProduct(this)">
                     <img src="../../assets/products/bag/bag-3.jpg" alt="Tas Hermes" class="carousel-item-img" />
                     <div class="carousel-item-overlay"></div>
                     <div class="carousel-item-content">
@@ -140,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" onclick="onClickBestSellingProduct(this)">
                     <img src="../../assets/products/shoes/shoes-3.jpg" alt="Nike Run FIT" class="carousel-item-img" />
                     <div class="carousel-item-overlay"></div>
                     <div class="carousel-item-content">
@@ -167,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" onclick="onClickBestSellingProduct(this)">
                     <img src="../../assets/products/watch/watch-2.jpg" alt="Omega Seamaster" class="carousel-item-img" />
                     <div class="carousel-item-overlay"></div>
                     <div class="carousel-item-content">
@@ -226,7 +226,7 @@
                     </div>
                     <div class="flex-row gap-1 align-center">
                         <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
-                        <span class="material-icons-outlined">
+                        <span class="material-icons-outlined" onclick="addToCart(this)">
                             shopping_cart
                         </span>
                     </div>
@@ -254,7 +254,7 @@
                     </div>
                     <div class="flex-row gap-1 align-center">
                         <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
-                        <span class="material-icons-outlined">
+                        <span class="material-icons-outlined" onclick="addToCart(this)">
                             shopping_cart
                         </span>
                     </div>
@@ -282,7 +282,7 @@
                     </div>
                     <div class="flex-row gap-1 align-center">
                         <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
-                        <span class="material-icons-outlined">
+                        <span class="material-icons-outlined" onclick="addToCart(this)">
                             shopping_cart
                         </span>
                     </div>
@@ -310,7 +310,7 @@
                     </div>
                     <div class="flex-row gap-1 align-center">
                         <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
-                        <span class="material-icons-outlined">
+                        <span class="material-icons-outlined" onclick="addToCart(this)">
                             shopping_cart
                         </span>
                     </div>
@@ -338,7 +338,7 @@
                     </div>
                     <div class="flex-row gap-1 align-center">
                         <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
-                        <span class="material-icons-outlined">
+                        <span class="material-icons-outlined" onclick="addToCart(this)">
                             shopping_cart
                         </span>
                     </div>
@@ -366,7 +366,7 @@
                     </div>
                     <div class="flex-row gap-1 align-center">
                         <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
-                        <span class="material-icons-outlined">
+                        <span class="material-icons-outlined" onclick="addToCart(this)">
                             shopping_cart
                         </span>
                     </div>
@@ -394,7 +394,7 @@
                     </div>
                     <div class="flex-row gap-1 align-center">
                         <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
-                        <span class="material-icons-outlined">
+                        <span class="material-icons-outlined" onclick="addToCart(this)">
                             shopping_cart
                         </span>
                     </div>
@@ -422,7 +422,7 @@
                     </div>
                     <div class="flex-row gap-1 align-center">
                         <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
-                        <span class="material-icons-outlined">
+                        <span class="material-icons-outlined" onclick="addToCart(this)">
                             shopping_cart
                         </span>
                     </div>
@@ -450,7 +450,7 @@
                     </div>
                     <div class="flex-row gap-1 align-center">
                         <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
-                        <span class="material-icons-outlined">
+                        <span class="material-icons-outlined" onclick="addToCart(this)">
                             shopping_cart
                         </span>
                     </div>
@@ -478,7 +478,7 @@
                     </div>
                     <div class="flex-row gap-1 align-center">
                         <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
-                        <span class="material-icons-outlined">
+                        <span class="material-icons-outlined" onclick="addToCart(this)">
                             shopping_cart
                         </span>
                     </div>
@@ -506,7 +506,7 @@
                     </div>
                     <div class="flex-row gap-1 align-center">
                         <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
-                        <span class="material-icons-outlined">
+                        <span class="material-icons-outlined" onclick="addToCart(this)">
                             shopping_cart
                         </span>
                     </div>
@@ -534,7 +534,7 @@
                     </div>
                     <div class="flex-row gap-1 align-center">
                         <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
-                        <span class="material-icons-outlined">
+                        <span class="material-icons-outlined" onclick="addToCart(this)">
                             shopping_cart
                         </span>
                     </div>
@@ -542,9 +542,9 @@
             </div>
          </section>
          <section class="w-full flex-row align-center justify-center section-container">
-            <button class="contain-btn">
+            <a href="#category-section" class="contain-btn">
                 Lihat berdasarkan kategori
-            </button>
+            </a>
          </section>
          <footer class="footer">
             <div class="logo-container">
@@ -552,19 +552,19 @@
             </div>
             <div class="flex-col gap-1">
                 <h5>Sitemap</h5>
-                <a>Home</a>
-                <a>Contact</a>
-                <a>About</a>
+                <a href="./index.html" style="cursor: pointer;">Home</a>
+                <a href="./contact.html" style="cursor: pointer;">Contact</a>
+                <a href="./about.html" style="cursor: pointer;">About</a>
             </div>
             <div class="flex-col gap-1">
                 <h5>Kategori</h5>
-                <a>Tas</a>
-                <a>Kecantikan</a>
-                <a>Sepatu</a>
-                <a>Jam Tangan</a>
-                <a>HP & Tablet</a>
-                <a>Komputer</a>
-                <a>Headset</a>
+                <a href="./kategori/tas.html" style="cursor: pointer;">Tas</a>
+                <a href="./kategori/kecantikan.html" style="cursor: pointer;">Kecantikan</a>
+                <a href="./kategori/sepatu.html" style="cursor: pointer;">Sepatu</a>
+                <a href="./kategori/jam-tangan.html" style="cursor: pointer;">Jam Tangan</a>
+                <a href="./kategori/hp-dan-tablet.html" style="cursor: pointer;">HP & Tablet</a>
+                <a href="./kategori/komputer.html" style="cursor: pointer;">Komputer</a>
+                <a href="./kategori/headset.html" style="cursor: pointer;">Headset</a>
             </div>
          </footer>
     </body>

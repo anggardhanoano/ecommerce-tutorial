@@ -226,3 +226,12 @@
   color: white;
   justify-content: space-around;
 }
+
+.material-icons-outlined {
+  cursor: pointer;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}

@@ -4,12 +4,6 @@ window.onload = function () {
   populateCartData();
 };
 
-// `https://wa.me/+6285179893859?text=${encodeURIComponent(
-//     "Halo, saya mau checkout ini ya\n\n" +
-//     processCheckout(store) +
-//     "\nPembayarannya bagaimana?"
-// )}`
-
 function populateCartData() {
   const container = document.getElementById("cart-container");
 

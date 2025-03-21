@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kecantikan di Gradient Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons&family=Material+Icons+Outlined&family=Material+Icons+Round&family=Material+Icons+Sharp&family=Material+Icons+Two+Tone" rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <script src="../../scripts/landing.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <header class="navbar">
+        <div class="navbar-left-menu">
+            <h1 class="logo">Gradient Shop</h1>
+            <nav class="navbar-menu-container">
+                <a href="../index.html">Home</a>
+                <a href="../contact.html">Contact</a>
+                <a href="../about.html">About</a>
+            </nav>
+        </div>
+        <a class="navbar-right-menu" href="../keranjang.html">
+            <span class="material-icons-outlined">
+                shopping_cart
+            </span>
+        </a>
+    </header>
+    <!-- navbar -->
+    <div class="section-container flex-col gap-4">
+        <section class="flex-col gap-2">
+            <div class="product-rating">
+                <div class="section-title">
+                    <div class="red-box"></div>
+                    <h2 class="section-title-content">Produk Kecantikan</h2>
+                </div>
+            </div>
+            <section class="product-catalog-container">
+                <div class="product-item">
+                    <img src="../../../assets/products/cosmetics/skincare-1.jpg" class="product-img"/>
+                    <h3>Hair Oil 100% Organic</h3>
+                    <span class="price">Rp 40.000</span>
+                    <div class="product-rating">
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                    </div>
+                    <div class="flex-row gap-1 align-center">
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
+                        <span class="material-icons-outlined" onclick="addToCart(this)">shopping_cart</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="../../../assets/products/cosmetics/skincare-2.jpg" class="product-img"/>
+                    <h3>Face Serum Brightening</h3>
+                    <span class="price">Rp 150.000</span>
+                    <div class="product-rating">
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                    </div>
+                    <div class="flex-row gap-1 align-center">
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
+                        <span class="material-icons-outlined" onclick="addToCart(this)">shopping_cart</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="../../../assets/products/cosmetics/skincare-3.jpg" class="product-img"/>
+                    <h3>Moisturizer Gel</h3>
+                    <span class="price">Rp 120.000</span>
+                    <div class="product-rating">
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                    </div>
+                    <div class="flex-row gap-1 align-center">
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
+                        <span class="material-icons-outlined" onclick="addToCart(this)">shopping_cart</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="../../../assets/products/cosmetics/skincare-4.jpg" class="product-img"/>
+                    <h3>Bamboo Shampoo</h3>
+                    <span class="price">Rp 300.000</span>
+                    <div class="product-rating">
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                    </div>
+                    <div class="flex-row gap-1 align-center">
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
+                        <span class="material-icons-outlined" onclick="addToCart(this)">shopping_cart</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="../../../assets/products/cosmetics/skincare-5.jpg" class="product-img"/>
+                    <h3>Sunscreen SPF 50</h3>
+                    <span class="price">Rp 95.000</span>
+                    <div class="product-rating">
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                    </div>
+                    <div class="flex-row gap-1 align-center">
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
+                        <span class="material-icons-outlined" onclick="addToCart(this)">shopping_cart</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="../../../assets/products/cosmetics/skincare-6.jpg" class="product-img"/>
+                    <h3>Night Cream Anti Aging</h3>
+                    <span class="price">Rp 180.000</span>
+                    <div class="product-rating">
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                    </div>
+                    <div class="flex-row gap-1 align-center">
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
+                        <span class="material-icons-outlined" onclick="addToCart(this)">shopping_cart</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="../../../assets/products/cosmetics/skincare-7.jpg" class="product-img"/>
+                    <h3>Face Toner Hydrating</h3>
+                    <span class="price">Rp 75.000</span>
+                    <div class="product-rating">
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                    </div>
+                    <div class="flex-row gap-1 align-center">
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
+                        <span class="material-icons-outlined" onclick="addToCart(this)">shopping_cart</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="../../../assets/products/cosmetics/skincare-8.jpg" class="product-img"/>
+                    <h3>Face Mask Clay</h3>
+                    <span class="price">Rp 65.000</span>
+                    <div class="product-rating">
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                    </div>
+                    <div class="flex-row gap-1 align-center">
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
+                        <span class="material-icons-outlined" onclick="addToCart(this)">shopping_cart</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="../../../assets/products/cosmetics/skincare-9.jpg" class="product-img"/>
+                    <h3>Eye Cream Dark Circle</h3>
+                    <span class="price">Rp 135.000</span>
+                    <div class="product-rating">
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                        <span class="material-icons-outlined red">star</span>
+                    </div>
+                    <div class="flex-row gap-1 align-center">
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">Lihat produk</button>
+                        <span class="material-icons-outlined" onclick="addToCart(this)">shopping_cart</span>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="logo-container">
+            <h2 class="logo">Gradient Shop.</h2>
+        </div>
+        <div class="flex-col gap-1">
+            <h5>Sitemap</h5>
+            <a href="../index.html" style="cursor: pointer;">Home</a>
+            <a href="../contact.html" style="cursor: pointer;">Contact</a>
+            <a href="../about.html" style="cursor: pointer;">About</a>
+        </div>
+        <div class="flex-col gap-1">
+            <h5>Kategori</h5>
+            <a href="./tas.html" style="cursor: pointer;">Tas</a>
+            <a href="./kecantikan.html" style="cursor: pointer;">Kecantikan</a>
+            <a href="./sepatu.html" style="cursor: pointer;">Sepatu</a>
+            <a href="./jam-tangan.html" style="cursor: pointer;">Jam Tangan</a>
+            <a href="./hp-dan-tablet.html" style="cursor: pointer;">HP & Tablet</a>
+            <a href="./komputer.html" style="cursor: pointer;">Komputer</a>
+            <a href="./headset.html" style="cursor: pointer;">Headset</a>
+        </div>
+    </footer>
+</body>
+</html>
